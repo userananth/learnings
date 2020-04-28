@@ -1,0 +1,50 @@
+
+:root
+{
+  --Primary-color:#1dbd12;
+  --gridRowColor:rgb(104, 135, 12);
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: Auto auto;
+}
+
+.grid div:nth-child(even) {
+  background-color: var(--Primary-color);
+} 
+
+.grid div:nth-child(odd) {
+  background-color: var(--gridRowColor);
+}
+
+
+.grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+ grid-template-rows: 500px 200px;
+  row-gap: 10px;
+  column-gap: 2px;
+ 
+}
+
+.title{
+  grid-column: 1/4;
+  border:2px solid #eee;
+ 
+}
+.header{
+  grid-row: 1/3;
+  border:2px solid #eee;
+ 
+}
+
+.content{
+  grid-row: 1/3;
+  border:2px solid #eee;
+ 
+}
